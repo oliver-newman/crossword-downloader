@@ -12,6 +12,7 @@ from time import sleep
 import os.path
 import socket
 
+
 ARCHIVE_PATH = "/Users/Oliver/Desktop/crosswords/NYT_archive/"
 URL_HEAD     = "http://www.nytimes.com/svc/crosswords/v2/puzzle/daily-"
 EARLIEST_PUZ = {
@@ -117,7 +118,7 @@ def filePath(today):
     """
     # Date components
     day       = str(today.day).zfill(2)
-    month     = str(today.month)
+    month     = str(today.month).zfill(2)
     monthName = today.strftime("%B")[:3] # First three letters of month name
     year      = str(today.year)
 

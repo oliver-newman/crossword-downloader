@@ -31,7 +31,7 @@ class PathExistsException(Exception):
         return self.msg
 
 
-if __name__ == "__main__":
+def main():
     argc = len(argv)
     if argc != 2:
         print(argc)
@@ -54,3 +54,6 @@ if __name__ == "__main__":
     with open(MAIN_FILE_NAME, "w") as mainFile:
         mainFile.writelines(mainFileLines)
 
+
+if __name__ == "__main__":
+    main()
